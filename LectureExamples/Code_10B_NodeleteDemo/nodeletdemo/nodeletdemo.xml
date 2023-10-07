@@ -1,0 +1,14 @@
+<library path="lib/libnodeletdemo">
+	<class name="nodeletdemo/nlistener" type="nodeletdemo_ns::nlistener"
+		base_class_type="nodelet::Nodelet">
+		<description>
+			nlistener.
+		</description>
+	</class>
+	<class name="nodeletdemo/ntalker" type="nodeletdemo_ns::ntalker"
+		base_class_type="nodelet::Nodelet">
+		<description>
+			ntalker.
+		</description>
+	</class>
+</library>

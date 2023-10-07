@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>nodeletdemo</name>
+  <version>0.1.0</version>
+  <description>Example of ROS nodelet with pointer-based message passing</description>
+
+  <maintainer email="don@todo.todo">don</maintainer>
+  <license>TODO</license>  
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nodelet</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>nodelet</run_depend>
+
+  <export>
+    <nodelet plugin="${prefix}/nodeletdemo.xml" />
+  </export>
+</package>

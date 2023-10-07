@@ -1,0 +1,2 @@
+Simple publisher / subscriber that demonstrates pass-by-pointer does not work between nodes.
+This motivates nodelets.  The nodelet version of this package is in ../nodeletdemo

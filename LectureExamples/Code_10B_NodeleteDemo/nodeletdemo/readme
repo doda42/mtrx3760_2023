@@ -1,0 +1,12 @@
+A simple publisher and subscriber implemented as nodelets.
+Inspired by the nodelet demo code by cryborg21 https://github.com/cryborg21/sample_nodelet
+and the nodelet code at https://www.clearpathrobotics.com/assets/guides/ros/Nodelet%20Everything.html
+
+
+run using roslaunch:
+roslaunch nodeletdemo nodeletdemo.launch
+
+or by manually instantiating a nodelet manager and the two nodelets:
+rosrun nodelet nodelet manager __name:=my_nodelet_manager
+rosrun nodelet nodelet load nodeletdemo/nlistener my_nodelet_manager
+rosrun nodelet nodelet load nodeletdemo/ntalker my_nodelet_manager

@@ -1,0 +1,16 @@
+<!-- -->
+<launch>
+	<!-- $ rosrun nodelet nodelet manager __name:=nodeletdemo_manager -->
+	<node pkg="nodelet" type="nodelet" args="manager"
+    name="nodeletdemo_manager" output="screen" />
+
+  <!-- $ rosrun nodelet nodelet load nodeletdemo/nlistener nodeletdemo_manager __name:=nlistener_loader-->
+	<node pkg="nodelet" type="nodelet" args="load nodeletdemo/nlistener nodeletdemo_manager"
+    name="nlistener_loader" output="screen">
+	</node>
+
+	<!-- $ rosrun nodelet nodelet load nodeletdemo/ntalker nodeletdemo_manager __name:=nlistener_loader-->
+	<node pkg="nodelet" type="nodelet" args="load nodeletdemo/ntalker nodeletdemo_manager"
+    name="ntalker_loader" output="screen">
+	</node>
+</launch>
